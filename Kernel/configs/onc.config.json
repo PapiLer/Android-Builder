@@ -1,18 +1,18 @@
 [
   {
     "kernelSource": {
-      "name": "Redmi7（GK）",
+      "name": "Redmi7（proton）",
       "repo": "https://github.com/PapiLer/Project-KARA",
-      "branch": "tmp-ksu",
+      "branch": "Kara-KSU",
       "device": "onclite",
       "defconfig": "onclite-perf_defconfig"
     },
     "enableCcache": true,
     "toolchains": [
       {
-        "repo": "https://github.com/PapiLer/clang-gengkapak",
-        "branch": "13",
-        "name": "clang-gengkapak",
+        "repo": "https://github.com/kdrag0n/proton-clang",
+        "branch": "master",
+        "name": "proton-clang",
         "binaryEnv": [
           "bin"
         ]
@@ -20,10 +20,10 @@
     ],
     "params": {
       "ARCH": "arm64",
-      "CC": "clang-gengkapak/bin/clang",
+      "CC": "proton-clang/bin/clang",
       "externalCommands": {
-        "CROSS_COMPILE": "clang-gengkapak/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "clang-gengkapak/bin/arm-linux-gnueabi-"
+        "CROSS_COMPILE": "proton-clanh/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "proton-clang/bin/arm-linux-gnueabi-"
       }
     },
     "AnyKernel3": {
